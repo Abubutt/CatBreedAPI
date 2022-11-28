@@ -1,35 +1,38 @@
 ﻿<Properties StartupConfiguration="{657D86A4-E65D-4FC7-A763-075DB3B567A1}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CatBreedAPI/Controllers/CatBreedController.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CatBreedAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
     <Files>
-      <File FileName="CatBreedAPI/Controllers/CatBreedController.cs" Line="48" Column="48" />
-      <File FileName="CatBreedAPI/Data/DataContext.cs" Line="10" Column="1" />
-      <File FileName="CatBreedAPI/appsettings.json" Line="3" Column="5" />
-      <File FileName="CatBreedAPI/Program.cs" Line="13" Column="1" />
-      <File FileName="CatBreedAPI/Migrations/20221111211657_CreateInitial.cs" Line="1" Column="1" />
-      <File FileName="CatBreedAPI/CatBreed.cs" Line="1" Column="1" />
-      <File FileName="Controllers/BreedsController.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="2" Column="37" />
+      <File FileName="appsettings.json" Line="3" Column="72" />
+      <File FileName="appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Models/Breed.cs" Line="10" Column="41" />
+      <File FileName="Models/Cat.cs" Line="13" Column="7" />
+      <File FileName="Data/CatBreedAPIContext.cs" Line="70" Column="62" />
+      <File FileName="Controllers/BreedsController.cs" Line="60" Column="53" />
+      <File FileName="Controllers/CatsController.cs" Line="93" Column="92" />
+      <File FileName="Models/ResponseModel.cs" Line="1" Column="1" />
+      <File FileName="Models/CatResponse.cs" Line="4" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CatBreedAPI" expanded="True">
             <Node name="CatBreedAPI" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="BreedsController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.CatBreedAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
