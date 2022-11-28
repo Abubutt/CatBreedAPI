@@ -51,7 +51,7 @@ namespace CatBreedAPI.Controllers
             Response.statusDescription = "Success, cat with the name " + name + " found";
             Response.Cats = responseList;
 
-            if (responseList.Count == 0)
+            if (cat == null)
             {
                 Response.statusCode = 404;
                 Response.statusDescription = "Failed, cat with the name " + name + " not found";
