@@ -4,7 +4,7 @@
 This api allows the user to easily search for different information on cat breeds as well as see what cats are available.
 
 ## Changed API Idea
-I changed the API from being about populations to cat breeds because I myself have a cat and the hassle to find a cat online maybe me want to create an api for it.
+I changed the API from being about populations to cat breeds because I myself have a cat and the hassle to find a cat online made me want to create an api for it.
 
 ## Endpoints
 
