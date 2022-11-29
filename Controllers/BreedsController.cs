@@ -23,7 +23,7 @@ namespace CatBreedAPI.Controllers
             _context = context;
         }
 
-   
+
         [HttpGet]
         public async Task<ActionResult<BreedResponse>> GetBreeds()
         {
@@ -39,7 +39,7 @@ namespace CatBreedAPI.Controllers
                 Response.statusDescription = "Failed, No Breeds Exist";
                 Response.Breeds = new List<Breed>();
             }
-         
+
             return Response;
         }
 
@@ -53,7 +53,7 @@ namespace CatBreedAPI.Controllers
             Response.statusDescription = "Success, Breed with name " + name + " found";
             Response.Breeds = responseList;
 
-            if (breed == null)
+            if (responseList.Count == 0)
             {
                 Response.statusCode = 404;
                 Response.statusDescription = "Failed, Breed with name " + name + " not found";
@@ -63,7 +63,7 @@ namespace CatBreedAPI.Controllers
             return Response;
         }
 
-       
+
         [HttpPost]
         public async Task<ActionResult<BreedResponse>> PostBreed(Breed breed)
         {
@@ -88,13 +88,13 @@ namespace CatBreedAPI.Controllers
                     Response.statusDescription = "Failed to add breed";
                     return Response;
                 }
-         
+
             }
-            Response.statusDescription = "Success, Breed " + breed.BreedName + " has been added";
+            Response.statusDescription = "Success, Breed " + breed.BreedName + "has been added";
             return Response;
         }
 
-      
+
         [HttpDelete("{name}")]
         public async Task<ActionResult<BreedResponse>> DeleteBreed(string name)
         {

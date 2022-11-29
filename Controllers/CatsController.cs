@@ -27,7 +27,7 @@ namespace CatBreedAPI.Controllers
         public async Task<ActionResult<CatResponse>> GetCats()
         {
             var cats = _context.Cats.ToList();
-            if(cats.Count == 0)
+            if (cats.Count == 0)
             {
                 Response.statusCode = 404;
                 Response.statusDescription = "Failed, no cats exist";
@@ -37,7 +37,7 @@ namespace CatBreedAPI.Controllers
             Response.statusDescription = "Success, cats acquired";
             Response.Cats = cats;
 
-            return  Response;
+            return Response;
         }
 
         // GET: api/Cats/5
@@ -51,7 +51,7 @@ namespace CatBreedAPI.Controllers
             Response.statusDescription = "Success, cat with the name " + name + " found";
             Response.Cats = responseList;
 
-            if (cat == null)
+            if (responseList.Count == 0)
             {
                 Response.statusCode = 404;
                 Response.statusDescription = "Failed, cat with the name " + name + " not found";
@@ -63,7 +63,7 @@ namespace CatBreedAPI.Controllers
 
 
 
-            
+
         [HttpPost]
         public async Task<ActionResult<CatResponse>> PostCat(Cat cat)
         {
@@ -93,7 +93,7 @@ namespace CatBreedAPI.Controllers
             Response.statusDescription = "Success, Cat " + cat.CatName + " has been added";
             return Response;
         }
-        
+
 
         private bool CatExists(int id)
         {
