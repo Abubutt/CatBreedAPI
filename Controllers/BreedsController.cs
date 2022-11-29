@@ -53,7 +53,7 @@ namespace CatBreedAPI.Controllers
             Response.statusDescription = "Success, Breed with name " + name + " found";
             Response.Breeds = responseList;
 
-            if (responseList.Count == 0)
+            if (breed == null)
             {
                 Response.statusCode = 404;
                 Response.statusDescription = "Failed, Breed with name " + name + " not found";
@@ -80,17 +80,19 @@ namespace CatBreedAPI.Controllers
                 {
                     Response.statusDescription = "Breed with id " + breed.BreedId.ToString() + " already exist";
                     Response.statusCode = 400;
+                    Response.Breeds = new List<Breed>();
                     return Response;
                 }
                 else
                 {
                     Response.statusCode = 404;
                     Response.statusDescription = "Failed to add breed";
+                    Response.Breeds = new List<Breed>();
                     return Response;
                 }
 
             }
-            Response.statusDescription = "Success, Breed " + breed.BreedName + "has been added";
+            Response.statusDescription = "Success, Breed " + breed.BreedName + " has been added";
             return Response;
         }
 
